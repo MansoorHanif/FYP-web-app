@@ -1,0 +1,21 @@
+{% extends theme("layout.html") %}
+
+{% block content %}
+{% from theme("macros.html") import horizontal_field, horizontal_select_field %}
+
+<div class="panel page-panel">
+    <div class="panel-heading page-head">
+        {% trans %}Breed Recognizer{% endtrans %}
+    </div>
+    
+    <div class="gallery" style="padding-left: 400px ; padding-top: 30px">
+        <img src=  "{{ url_for('portal.img_file',filename=filename) }}" alt="Tested Image." style="width:300px;height: 300px;">
+    </div>
+        <div class="desc" style="padding-left: 100px;">
+            <h2 style="color:#069">%s</h2>
+        
+        
+        </div>
+    
+</div>
+{% endblock %}

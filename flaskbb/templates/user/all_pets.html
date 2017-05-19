@@ -1,0 +1,155 @@
+{% extends theme("user/profile_layout.html") %}
+{% from theme('macros.html') import render_pagination, topic_pages %}
+
+{% block breadcrumb %}
+<ul class="breadcrumb flaskbb-breadcrumb">
+    <li><a href="{{ url_for('forum.index') }}">{% trans %}Forum{% endtrans %}</a></li>
+    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+    <li class="active">{% trans %}Pets{% endtrans %}</li>
+</ul>
+{% endblock %}
+
+{% block profile_navigation %}
+{% from theme('macros.html') import render_pagination, navlink with context %}
+
+<ul class="nav profile-sidenav" id="profile-tabs" role="tablist">
+    <li>
+        <a href="{{ user.url }}">
+            <span class="fa fa-home"></span> {% trans %}Overview{% endtrans %}
+        </a>
+    </li>
+
+    <li class="active">
+        <a href="{{ url_for('user.view_all_pets',username=user.username) }}">
+            <span class="fa fa-comment"></span> {% trans %}Pets{% endtrans %}
+        </a>
+    </li>
+    {#
+    <li>
+        <a href="{{ user.url }}">
+            <span class="fa fa-line-chart"></span> {% trans %}Statistics{% endtrans %}
+        </a>
+    </li>
+    #}
+    <li>
+        <a href="{{ url_for('user.view_all_topics', username=user.username) }}">
+            <span class="fa fa-comments"></span> {% trans %}Topics{% endtrans %}
+        </a>
+    </li>
+
+    <li >
+        <a href="{{ url_for('user.view_all_posts', username=user.username) }}">
+            <span class="fa fa-comment"></span> {% trans %}Posts{% endtrans %}
+        </a>
+    </li>
+    
+    {% if current_user and current_user.is_authenticated %}
+    <li>
+        <a href="{{ url_for('user.view_all_reminders',username=user.username) }}">
+            <span class="fa fa-comment"></span> {% trans %}Reminders{% endtrans %}
+        </a>
+    </li>
+    {%else%}
+    {%endif%}
+</ul>
+{% endblock %}
+
+
+{% block profile_content %}
+<!-- middle column -->
+<!-- middle column -->
+<div class="col-md-9 col-sm-9 col-xs-12 profile-content">
+
+ <div class="panel page-panel">
+        <div class="panel-heading page-head">
+            <a>{% trans %}Pet list{% endtrans %}</a>
+        </div>
+        <div class="panel-body page-body">
+            
+            <div class="row page-row hover clearfix">
+            <div class="page-meta">
+                
+                <div class="col-md-3 col-sm-3 col-xs-5 meta-item">{% trans %}Petname{% endtrans %}</div>
+                <div class="col-md-3 col-sm-3 col-xs-5 meta-item">
+                    {% trans %}Breed{% endtrans %}
+                </div>
+                <div class="col-md-2 col-sm-2 hidden-xs meta-item">
+                    {% trans %}Gender{% endtrans %}
+                </div>
+                {% if current_user and current_user.is_authenticated and pets.items and current_user.id==pets.items[0].user.id%}
+                <div class="col-md-2 col-sm-2 col-xs-5">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa fa-fw fa-cog"></span> {% trans %}Actions{% endtrans %}
+                        </button>
+                        <ul class="dropdown-menu slidedown">
+                            <li>
+                                <button class="btn btn-link" onclick="return bulk_actions.execute('{{ url_for('pet.delete_pet') }}')">
+                                    <span class="fa fa-fw fa-trash text-danger"></span> {% trans %}Delete selected Pets{% endtrans %}
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 meta-item"><input type="checkbox" name="rowtoggle" class="action-checkall" title="Select All"/></div>
+                {%else%}
+                {%endif%}
+            </div>
+            </div>
+            {% for pet in pets.items %}
+            <div class="row page-row hover clearfix">
+                
+                <div class="col-md-3 col-sm-3 col-xs-5"><a href="{{ pet.url }}">{{ pet.petname }}</a></div>
+                <div class="col-md-3 col-sm-3 col-xs-5">
+                <a ></a>{{ pet.breed }}</div>
+                <div class="col-md-2 col-sm-2 hidden-xs">{{ pet.gender }}</div>
+                {% if current_user and current_user.is_authenticated and current_user.id==pet.user.id %}
+                <div class="col-md-2 col-sm-2 col-xs-5">
+                        <a href="{{ url_for('pet.edit_pet', pet_id = pet.id) }}" class="btn btn-icon">
+                            <span class="fa fa-pencil text-primary" data-toggle="tooltip" data-placement="top" title="{% trans %}Edit{% endtrans %}"></span>
+                        </a>
+                        <form class="inline-form" id="delete-{{pet.id}}" method="post" action="{{ url_for('pet.delete_pet',pet_id=pet.id) }}">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                            <button class="btn btn-icon" name="confirmDialog" data-toggle="tooltip" data-placement="top" title="{% trans %}Delete{% endtrans %}">
+                                <span class="fa fa-trash text-danger"></span>
+                            </button>
+                        </form>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1"><input type="checkbox" name="rowid" class="action-checkbox" value="{{ pet.id }}" title="Select Group"/></div>
+                {%else%}
+                {%endif%}
+            </div>
+            {% else %}
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="alert-message alert-message-info" role="alert">
+                            {% trans %}The user has not added any pets yet.{% endtrans %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>      
+
+
+  {% if pets.items|length > 1 %}
+    <div class="col-md-12 col-sm-12 col-xs-12 controls-col">
+        <div class="pull-right">
+            {{ render_pagination(pets, url_for('user.view_all_pets',username=user.username)) }}
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+    var bulk_actions = new BulkActions();
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+{% endblock %}

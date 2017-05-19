@@ -1,0 +1,37 @@
+{% extends theme("layout.html") %}
+
+{% block content %}
+{% from theme("macros.html") import horizontal_field, horizontal_select_field %}
+
+<div class="panel page-panel">
+    <div class="panel-heading page-head">
+        {% trans %}Breed Recognizer{% endtrans %}
+    </div>
+    <div class="panel-body page-body" >
+        <h1>BREED FINDER</h1>
+<br>
+<br>
+
+            <form method="POST" enctype="multipart/form-data">
+            
+        </form>
+                  <form action="" method=post enctype=multipart/form-data> 
+                    {{ form.hidden_tag() }}
+            
+                    <div class="button-container">
+                        {{ horizontal_field(form.image) }}
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="button-container">
+            
+                        {{ horizontal_field(form.submit) }}
+
+                    </div>
+                    
+                </form>
+       </div>
+    
+</div>
+{% endblock %}

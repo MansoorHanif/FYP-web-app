@@ -1,0 +1,302 @@
+2017-05-05 12:12:09,091 ERROR: Exception on /favicon.ico [GET] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1831, in preprocess_request
+    rv = func()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/app.py", line 272, in update_lastseen
+    if current_user.is_authenticated:
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 302, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_login/login_manager.py", line 317, in _load_user
+    return self.reload_user()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_login/login_manager.py", line 279, in reload_user
+    user = self.user_callback(user_id)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/app.py", line 192, in load_user
+    user_instance = User.query.filter_by(id=user_id).first()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 496, in __get__
+    mapper = orm.class_mapper(type)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/base.py", line 421, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/base.py", line 400, in _inspect_mapped_class
+    mapper._configure_all()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/mapper.py", line 1222, in _configure_all
+    configure_mappers()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/mapper.py", line 2866, in configure_mappers
+    mapper._post_configure_properties()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/mapper.py", line 1765, in _post_configure_properties
+    prop.init()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/interfaces.py", line 184, in init
+    self.do_init()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1653, in do_init
+    self._setup_join_conditions()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1728, in _setup_join_conditions
+    can_be_synced_fn=self._columns_are_mapped
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1986, in __init__
+    self._determine_joins()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 2090, in _determine_joins
+    "specify a 'primaryjoin' expression." % self.prop)
+NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Pet.reminders - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2017-05-05 12:14:56,705 ERROR: Exception on /pet/new-reminder [GET] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/pet/views.py", line 127, in create_reminder
+    return render_template('pet/new_reminder.html', form=form)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/pet/new_reminder.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/layout.html", line 168, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/settings_layout.html", line 26, in block "content"
+    {% block settings_content %}{% endblock %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/pet/new_reminder.html", line 15, in block "settings_content"
+    {{ render_field(form.delta) }}
+UndefinedError: 'render_field' is undefined
+2017-05-05 12:15:51,759 ERROR: Exception on /user/mansoor/reminders [GET] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/user/views.py", line 45, in view_all_reminders
+    reminders = user.all_reminders(page, current_user)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/user/models.py", line 317, in all_reminders
+    paginate(page, flaskbb_config['PETS_PER_PAGE'], False)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 475, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2703, in all
+    return list(self)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2855, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2878, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1394, in _handle_dbapi_exception
+    exc_info
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (sqlite3.OperationalError) no such table: reminders [SQL: u'SELECT reminders.id AS reminders_id, reminders.user_id AS reminders_user_id, reminders.subject AS reminders_subject, reminders.content AS reminders_content, reminders.delta AS reminders_delta, reminders.time AS reminders_time, reminders.timezone AS reminders_timezone \nFROM reminders \nWHERE reminders.user_id = ? AND (EXISTS (SELECT 1 \nFROM forumgroups, forums, groups \nWHERE forumgroups.forum_id = forums.id AND groups.id = forumgroups.group_id AND groups.id IN (?)))\n LIMIT ? OFFSET ?'] [parameters: (1, 1, 6, 0)]
+2017-05-05 12:17:09,159 ERROR: Exception on /pet/new-reminder [GET] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/pet/views.py", line 127, in create_reminder
+    return render_template('pet/new_reminder.html', form=form)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/pet/new_reminder.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/layout.html", line 168, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/settings_layout.html", line 26, in block "content"
+    {% block settings_content %}{% endblock %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/pet/new_reminder.html", line 18, in block "settings_content"
+    {{ horizontal_field(form.submit) }}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/macros.html", line 252, in template
+    <div class="form-group row {%- if field.errors %} has-error{%- endif %}">
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'flaskbb.pet.forms.NewReminderForm object' has no attribute 'submit'
+2017-05-05 12:40:08,182 ERROR: Exception on /pet/new-reminder [POST] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/pet/views.py", line 123, in create_reminder
+    form.save(current_user.id)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/pet/forms.py", line 55, in save
+    if pet_id and user_id:
+NameError: global name 'pet_id' is not defined
+2017-05-05 12:42:46,082 ERROR: Exception on /user/mansoor/reminders [GET] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/user/views.py", line 46, in view_all_reminders
+    return render_template("user/all_reminders.html", user=user, reminders=reminders)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/all_reminders.html", line 2, in top-level template code
+    {% from theme('macros.html') import render_pagination, topic_pages %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/profile_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/layout.html", line 168, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/profile_layout.html", line 94, in block "content"
+    {% block profile_content %}
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/templates/user/all_reminders.html", line 99, in block "profile_content"
+    <form class="inline-form" id="delete-{{pet.id}}" method="post" action="{{ url_for('pet.delete_reminder',id=reminder.id) }}">
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'pet' is undefined
+2017-05-05 12:47:12,346 ERROR: Exception on /pet/delete-reminder [POST] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: delete_reminder() takes exactly 1 argument (0 given)
+2017-05-05 14:14:02,322 ERROR: Exception on /admin/users/add [POST] [in /home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/flask_allows/allows.py", line 98, in allower
+    return f(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/management/views.py", line 259, in add_user
+    form.save()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/management/forms.py", line 139, in save
+    return user.save()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/flaskbb/user/models.py", line 488, in save
+    db.session.commit()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 874, in commit
+    self.transaction.commit()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2139, in flush
+    self._flush(objects)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2223, in _flush
+    flush_context.execute()
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 181, in save_obj
+    mapper, table, insert)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 835, in _emit_insert_statements
+    execute(statement, params)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1394, in _handle_dbapi_exception
+    exc_info
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/KnowYourPet/.venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: users.password [SQL: u'INSERT INTO users (username, email, password, date_joined, lastseen, birthday, gender, website, location, signature, avatar, notes, last_failed_login, login_attempts, activated, theme, language, post_count, primary_group_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'] [parameters: (u'Faraz', u'i110190@nu.edu.pk', None, '2017-05-05 09:14:02.321253', '2017-05-05 09:14:02.321272', '1933-07-05 00:00:00.000000', u'Male', u'', u'', u'', u'', u'', None, 0, 0, None, 'en', 0, 3)]

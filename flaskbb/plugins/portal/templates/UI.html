@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Know Your Pet</title>    
+
+
+        <link rel='stylesheet prefetch'        href='http://fonts.googleapis.com/cssfamily=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        
+        <link href="{{ url_for('static', filename='css/reset.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet" />
+        
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    
+
+        <script src="../static/js/jquery-3.1.1.js"> </script>
+        <script src="../static/index.js"></script>
+      
+    </head>
+
+
+
+    <body>
+    
+        <!-- Title-->
+        <div class="container">
+          <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="{{ url_for('home') }}">Home</a></li>
+            <li role="presentation"><a href="{{ url_for('signin') }}">Sign in</a></li>
+            <li role="presentation"><a href="{{ url_for('signup') }}">Sign up</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Know Your Pet</h3>
+      </div>
+            
+            <div class="jumbotron">
+        <h1>BREED FINDER</h1>
+<br>
+<br>
+
+            <div>
+                <form action="" method=post enctype=multipart/form-data>
+
+                    <div class="button-container">
+                        <input type=file class="btn btn-lg btn-primary btn-block" name=file>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="button-container">
+                        <!-- <button id="uploadImage"><span>Upload Image</span></button> -->
+                        <input type=submit class="btn btn-lg btn-primary btn-block" value=Upload>
+
+                    </div>
+                    
+                </form>
+
+            </div>
+ 
+       </div>
+ 
+      <footer class="footer">
+        <p>&copy; CLASSIC 11</p>
+      </footer>
+          
+
+        </div>
+
+                   
+        
+
+    </body>
+</html>
+

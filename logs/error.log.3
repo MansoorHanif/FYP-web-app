@@ -1,0 +1,1076 @@
+2017-04-25 02:48:02,734 ERROR: Exception on /portal/upload [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/plugins/portal/views.py", line 96, in upload
+    folder = "pets/"+ current_user.id +"/"
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Guest' object has no attribute 'id'
+2017-04-25 02:49:19,763 ERROR: Exception on /portal/upload [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/plugins/portal/views.py", line 96, in upload
+    folder = "pets/"+ current_user.id +"/"
+TypeError: cannot concatenate 'str' and 'int' objects
+2017-04-25 02:50:19,763 ERROR: Exception on /portal/upload [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/plugins/portal/views.py", line 102, in upload
+    f.save(img_path)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/datastructures.py", line 2703, in save
+    dst = open(dst, 'wb')
+IOError: [Errno 2] No such file or directory: '/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/plugins/portal/uploads/pets/1/dogs.18486.jpg'
+2017-04-26 02:02:55,491 ERROR: Exception on /portal/upload [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/plugins/portal/views.py", line 102, in upload
+    f.save(img_path)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/datastructures.py", line 2703, in save
+    dst = open(dst, 'wb')
+IOError: [Errno 2] No such file or directory: '/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/plugins/portal/uploads/pets/1/dogs.18498.jpg'
+2017-04-26 22:10:05,103 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 72, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 20, in block "content"
+    {{ navlink('user.add_pet', _('Add New Pet')) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.add_pet'. Did you forget to specify values ['username']?
+2017-04-26 22:13:35,580 ERROR: Exception on /user/Add-Pet [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 139, in add_pet
+    title=_("Add Pet"))
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: pet_form.html
+2017-04-26 22:17:34,273 ERROR: Exception on /user/Add-Pet [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 134, in add_pet
+    form.save(owner=current_user)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/forms.py", line 154, in save
+    return pet.save(owner) #add pet
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/models.py", line 141, in save
+    db.session.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 874, in commit
+    self.transaction.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2139, in flush
+    self._flush(objects)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2223, in _flush
+    flush_context.execute()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 181, in save_obj
+    mapper, table, insert)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 835, in _emit_insert_statements
+    execute(statement, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1394, in _handle_dbapi_exception
+    exc_info
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (sqlite3.OperationalError) no such table: pets [SQL: u'INSERT INTO pets (user_id, petname, birthday, gender, breed, info) VALUES (?, ?, ?, ?, ?, ?)'] [parameters: (1, u'asd', '1931-02-02 00:00:00.000000', u'Male', u'gsd', u'asdasdasdasdas')]
+2017-04-27 01:12:03,134 ERROR: Exception on / [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1831, in preprocess_request
+    rv = func()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/app.py", line 268, in update_lastseen
+    if current_user.is_authenticated:
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 302, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/login_manager.py", line 317, in _load_user
+    return self.reload_user()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/login_manager.py", line 279, in reload_user
+    user = self.user_callback(user_id)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/app.py", line 188, in load_user
+    user_instance = User.query.filter_by(id=user_id).first()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2755, in first
+    ret = list(self[0:1])
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2547, in __getitem__
+    return list(res)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2855, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2878, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1394, in _handle_dbapi_exception
+    exc_info
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (sqlite3.OperationalError) no such table: users [SQL: u'SELECT users.password AS users_password, users.id AS users_id, users.username AS users_username, users.email AS users_email, users.date_joined AS users_date_joined, users.lastseen AS users_lastseen, users.birthday AS users_birthday, users.gender AS users_gender, users.website AS users_website, users.location AS users_location, users.signature AS users_signature, users.avatar AS users_avatar, users.notes AS users_notes, users.last_failed_login AS users_last_failed_login, users.login_attempts AS users_login_attempts, users.activated AS users_activated, users.theme AS users_theme, users.language AS users_language, users.post_count AS users_post_count, users.primary_group_id AS users_primary_group_id, groups_1.id AS groups_1_id, groups_1.name AS groups_1_name, groups_1.description AS groups_1_description, groups_1.admin AS groups_1_admin, groups_1.super_mod AS groups_1_super_mod, groups_1.mod AS groups_1_mod, groups_1.guest AS groups_1_guest, groups_1.banned AS groups_1_banned, groups_1.mod_edituser AS groups_1_mod_edituser, groups_1.mod_banuser AS groups_1_mod_banuser, groups_1.editpost AS groups_1_editpost, groups_1.deletepost AS groups_1_deletepost, groups_1.deletetopic AS groups_1_deletetopic, groups_1.posttopic AS groups_1_posttopic, groups_1.postreply AS groups_1_postreply \nFROM users LEFT OUTER JOIN groups AS groups_1 ON groups_1.id = users.primary_group_id \nWHERE users.id = ?\n LIMIT ? OFFSET ?'] [parameters: (u'1', 1, 0)]
+2017-04-27 01:48:14,729 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 20, in block "content"
+    {{ navlink('user.add_pet', _('Add New Pet')) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.add_pet'. Did you mean 'pet.add_pet' instead?
+2017-04-27 01:50:11,188 ERROR: Exception on /pet/Add-Pet [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/views.py", line 41, in add_pet
+    form.save(owner=current_user)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/forms.py", line 64, in save
+    return pet.save(owner) #add pet
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/models.py", line 79, in save
+    db.session.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 874, in commit
+    self.transaction.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2139, in flush
+    self._flush(objects)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2223, in _flush
+    flush_context.execute()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 181, in save_obj
+    mapper, table, insert)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 835, in _emit_insert_statements
+    execute(statement, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1394, in _handle_dbapi_exception
+    exc_info
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (sqlite3.OperationalError) no such table: pets [SQL: u'INSERT INTO pets (user_id, petname, birthday, gender, breed, avatar, info) VALUES (?, ?, ?, ?, ?, ?, ?)'] [parameters: (1, u'test', '1948-11-16 00:00:00.000000', u'Male', u'asfd', u'', u'efagregeebtbrrrbr tr brb r b df bdbb\r\ndbdbsb  bdfbdb\r\ndgerg , gg \r\ngdfg d, gd\r\ngg d g, sd, g,d fg,d tiworuoeg')]
+2017-04-27 03:31:47,133 ERROR: Exception on /pet/Add-Pet [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/views.py", line 41, in add_pet
+    form.save(owner=current_user)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/forms.py", line 64, in save
+    return pet.save(owner) #add pet
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/models.py", line 81, in save
+    db.session.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 874, in commit
+    self.transaction.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2139, in flush
+    self._flush(objects)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2223, in _flush
+    flush_context.execute()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 181, in save_obj
+    mapper, table, insert)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 835, in _emit_insert_statements
+    execute(statement, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1394, in _handle_dbapi_exception
+    exc_info
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (sqlite3.OperationalError) no such table: pets [SQL: u'INSERT INTO pets (user_id, petname, birthday, gender, breed, avatar, info) VALUES (?, ?, ?, ?, ?, ?, ?)'] [parameters: (1, u'asds', '1947-03-17 00:00:00.000000', u'Male', u'sdadsa', u'', u'aslhdkjfafhjhf i hope this works')]
+2017-04-27 04:27:40,880 ERROR: Exception on / [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1831, in preprocess_request
+    rv = func()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/app.py", line 272, in update_lastseen
+    if current_user.is_authenticated:
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 302, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/login_manager.py", line 317, in _load_user
+    return self.reload_user()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/login_manager.py", line 279, in reload_user
+    user = self.user_callback(user_id)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/app.py", line 192, in load_user
+    user_instance = User.query.filter_by(id=user_id).first()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2755, in first
+    ret = list(self[0:1])
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2547, in __getitem__
+    return list(res)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2855, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2878, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1394, in _handle_dbapi_exception
+    exc_info
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (sqlite3.OperationalError) no such table: users [SQL: u'SELECT users.password AS users_password, users.id AS users_id, users.username AS users_username, users.email AS users_email, users.date_joined AS users_date_joined, users.lastseen AS users_lastseen, users.birthday AS users_birthday, users.gender AS users_gender, users.website AS users_website, users.location AS users_location, users.signature AS users_signature, users.avatar AS users_avatar, users.notes AS users_notes, users.last_failed_login AS users_last_failed_login, users.login_attempts AS users_login_attempts, users.activated AS users_activated, users.theme AS users_theme, users.language AS users_language, users.post_count AS users_post_count, users.primary_group_id AS users_primary_group_id, groups_1.id AS groups_1_id, groups_1.name AS groups_1_name, groups_1.description AS groups_1_description, groups_1.admin AS groups_1_admin, groups_1.super_mod AS groups_1_super_mod, groups_1.mod AS groups_1_mod, groups_1.guest AS groups_1_guest, groups_1.banned AS groups_1_banned, groups_1.mod_edituser AS groups_1_mod_edituser, groups_1.mod_banuser AS groups_1_mod_banuser, groups_1.editpost AS groups_1_editpost, groups_1.deletepost AS groups_1_deletepost, groups_1.deletetopic AS groups_1_deletetopic, groups_1.posttopic AS groups_1_posttopic, groups_1.postreply AS groups_1_postreply \nFROM users LEFT OUTER JOIN groups AS groups_1 ON groups_1.id = users.primary_group_id \nWHERE users.id = ?\n LIMIT ? OFFSET ?'] [parameters: (u'1', 1, 0)]
+2017-04-27 04:40:38,963 ERROR: Exception on / [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/forum/views.py", line 41, in index
+    categories = Category.get_all(user=current_user)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/forum/models.py", line 1003, in get_all
+    filter(Forum.groups.any(Group.id == guest_group.id)).\
+AttributeError: 'NoneType' object has no attribute 'id'
+2017-04-27 05:02:08,816 ERROR: Exception on /pet/Add-Pet [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/views.py", line 41, in add_pet
+    form.save(owner=current_user)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/forms.py", line 64, in save
+    return pet.save(owner) #add pet
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/models.py", line 81, in save
+    db.session.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 874, in commit
+    self.transaction.commit()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 461, in commit
+    self._prepare_impl()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2139, in flush
+    self._flush(objects)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2223, in _flush
+    flush_context.execute()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 548, in execute
+    uow
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 193, in save_obj
+    update_version_id in states_to_update
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 1016, in _finalize_insert_update_commands
+    mapper.dispatch.after_insert(mapper, connection, state)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/event/attr.py", line 256, in __call__
+    fn(*args, **kw)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/sqlalchemy/orm/events.py", line 616, in wrap
+    fn(*arg, **kw)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_whooshee.py", line 385, in after_insert
+    self.on_commit([[target, INSERT_KWD]])
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_whooshee.py", line 407, in on_commit
+    method(writer, change[0])
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/search.py", line 41, in insert_pet
+    owner_id=pet.owner.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+2017-04-27 05:06:46,551 ERROR: Exception on /pet/Add-Pet [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/views.py", line 43, in add_pet
+    return redirect(url_for("pet.profile"))
+NameError: global name 'redirect' is not defined
+2017-04-27 05:09:44,038 ERROR: Exception on /pet/Add-Pet [POST] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/views.py", line 43, in add_pet
+    return redirect(url_for("pet.profile"))
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'pet.profile'. Did you forget to specify values ['pet_id']?
+2017-04-27 05:14:13,652 ERROR: Exception on /pet/3 [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/views.py", line 32, in profile
+    return render_template("pet/profile.html", pet=pet)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile.html", line 1, in top-level template code
+    {% extends theme("pet/profile_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile_layout.html", line 4, in block "content"
+    {% block breadcrumb %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile.html", line 5, in block "breadcrumb"
+    <li><a href="{{ url_for('user.view_all_pets') }}">{% trans %}Pets{% endtrans %}</a></li>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets'. Did you forget to specify values ['username']?
+2017-04-27 05:31:36,124 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets',current_user.username, _('Add New Pet')) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets'. Did you forget to specify values ['username']?
+2017-04-27 05:32:14,508 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets,current_user.username', _('Add New Pet')) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets,current_user.username'. Did you mean 'user.view_all_pets' instead?
+2017-04-27 05:32:58,636 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets', _('Add New Pet'),current_user.username) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets'. Did you forget to specify values ['username']?
+2017-04-27 05:33:31,668 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets','current_user.username', _('Add New Pet')) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets'. Did you forget to specify values ['username']?
+2017-04-27 05:34:01,455 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets(current_user.username)', _('Add New Pet')) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets'. Did you forget to specify values ['username']?
+2017-04-27 05:34:19,960 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets(current_user.username)', _('Add New Pet')) }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets(current_user.username)'. Did you mean 'user.view_all_pets' instead?
+2017-04-27 05:36:48,444 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets', _('Add New Pet')),current_user.username }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets'. Did you forget to specify values ['username']?
+2017-04-27 05:37:05,964 ERROR: Exception on /user/settings/general [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/user/views.py", line 79, in settings
+    return render_template("user/general_settings.html", form=form)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/general_settings.html", line 1, in top-level template code
+    {% extends theme("user/settings_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/user/settings_layout.html", line 21, in block "content"
+    {{ navlink('user.view_all_pets', _('Add New Pet')),current_user.username }}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/macros.html", line 313, in template
+    <a href="{{ url_for(endpoint) }}">{% if icon %}<i class="{{ icon }}"></i> {% endif %} {{ name }}</a>
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/werkzeug/routing.py", line 1768, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'user.view_all_pets'. Did you forget to specify values ['username']?
+2017-04-27 05:46:37,638 ERROR: Exception on /pet/mansoor/4 [GET] [in /home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/pet/views.py", line 32, in profile
+    return render_template("pet/profile.html", pet=pet,username=username)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/utils/helpers.py", line 74, in render_template
+    return render_theme_template(theme, template, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask_themes2/__init__.py", line 141, in render_theme_template
+    return render_template(template_name, **context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/.venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile.html", line 1, in top-level template code
+    {% extends theme("pet/profile_layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile_layout.html", line 1, in top-level template code
+    {% extends theme("layout.html") %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/layout.html", line 167, in top-level template code
+    {% block content %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile_layout.html", line 4, in block "content"
+    {% block breadcrumb %}
+  File "/home/mansoor/pywork/catsanddogs/flaskbb/flaskbb/templates/pet/profile.html", line 5, in block "breadcrumb"
+    <li><a href="{{ url_for('user.view_all_pets', username) }}">{% trans %}Pets{% endtrans %}</a></li>
+TypeError: url_for() takes exactly 1 argument (2 given)
